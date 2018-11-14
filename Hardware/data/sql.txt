@@ -1,0 +1,26 @@
+
+CREATE TABLE user_list(user_id CHAR(100) PRIMARY KEY, password CHAR(100) NOT NULL, admin BOOLEAN DEFAULT FALSE);
+
+CREATE TABLE borrow_list(isbn CHAR(100) PRIMARY KEY, user_id CHAR(100) NOT NULL, time DATETIME NOT NULL);
+
+
+CREATE TABLE book_list(
+isbn CHAR(100) PRIMARY KEY,
+Title TEXT,
+Author TEXT,
+Publisher TEXT,
+Description TEXT,
+Genre TEXT,
+SalesRank INTEGER,
+Binding VARCHAR(200),
+Language VARCHAR(100),
+NumberOfPages INTEGER,
+Price VARCHAR(100),
+Date DATETIME,
+image_url TEXT
+);
+
+CREATE TABLE image_list(
+isbn CHAR(100) PRIMARY KEY,
+data MEDIUMBLOB NOT NULL
+);

@@ -1,0 +1,798 @@
+* {
+	padding: 0;
+	margin:0;
+}
+
+html {
+	overflow-y: scroll;
+}
+
+body {
+	width: 100%;
+	padding: 10px;
+}
+
+/* テーブルとth,tdに枠をつける */
+table {
+	border: 1px black solid;
+}
+
+th, td {
+	border: 1px black solid;
+}
+
+/* outerを中央揃えに */
+/* outerの幅はJavaScriptで自動調整 */
+#outer {
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+#header {
+	background-color: white;
+
+}
+
+#footer a {
+	color: black;
+}
+#footer a:hover {
+	color: dimgray;
+}
+
+/* メニュー */
+#menu {
+	background-color: wheat;
+	width: 120px;
+	float: left;
+}
+
+/* コンテンツ表示域 */
+#contents {
+	margin-left: 120px;
+
+}
+
+/* 中央メインコンテンツ */
+#main-content {
+	background-color: white;
+	padding: 10px 0 10px 10px;
+
+	float: left;
+}
+
+/* ランキング域のコンテンツ */
+#right-content {
+	width: 0px;
+	border: 1px orange solid;
+	float: right;
+}
+
+/* フッター */
+#footer {
+	width: 100%;
+	text-align: center;
+	clear: both;
+	font-size: 12px;
+	padding: 10px;
+}
+
+/* ロゴ域 */
+#mall-logo {
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+/* ロゴ画像のサイズ */
+#mall-logo > img {
+	width: 200px;
+	height: 90px;
+}
+
+/* ログインフォーム全体の位置調整 */
+#logo-area > .right-float > div {
+	display: table-cell;
+	vertical-align: middle;
+	padding-bottom: 10px;
+	padding-right: 30px;
+}
+
+/* ログインフォーム域のサイズ */
+#logo-area > .right-float > div > div {
+	display: table-cell;
+	height: 80px;
+	border: 1px gray solid;
+}
+
+/* ルートメニュー内のメニュー項目のスタイル */
+.menu-items li {
+	font-size: 14px;
+	list-style: none;
+
+	display: block;
+	position:relative;
+
+	cursor: default;
+
+	padding: 8px 5px 8px 5px;
+
+	border: 1px black solid;
+}
+
+/* サブメニューのスタイル */
+.menu-subitems{
+	z-index: 1000;
+
+	width: 100%;
+	display: none;
+	position: absolute;
+	left: 118px;
+	top: -1px;
+	background-color: wheat;
+}
+
+/* ナビ領域のスタイル */
+#mall-navi {
+	min-width: 1000px;
+	background-color: lavender;
+	border: 1px black solid;
+
+}
+
+/* ナビ左側領域のスタイル(幅はJavaScriptで自動調整) */
+#navi-left {
+	background-color: white;
+	width: 118px;
+	text-align: center;
+
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-right: 1px black solid;
+	float:left;
+}
+
+/*  ナビ中間域のスタイル */
+#navi-middle {
+	background-color: lavender;
+	padding-left: 20px;
+	font-size: 9.5pt;
+}
+
+#navi-middle > input {
+	margin: 3px 3px 3px 3px;
+}
+
+/* ナビ右側域のスタイル */
+#navi-right {
+	float: right;
+	font-size: 9.5pt;
+	padding-top: 3px;
+}
+
+/* イイね!一覧ボタンのスタイル */
+#show-my-nice-list {
+	margin-right: 10px;
+}
+
+/* 店舗検索テキストボックスのスタイル */
+#search-text {
+	width: 35%;
+	font-size: 12pt;
+}
+
+/* 詳細検索アンカーのスタイル */
+#search-dialog-open {
+	color: black;
+
+	margin-left: 10px;
+}
+
+/* 詳細検索アンカーのオンマウススタイル */
+#search-dialog-open:hover {
+	color: gray;
+}
+
+/* 詳細検索ダイアログのスタイル */
+#search-dialog {
+	background-color: whitesmoke;
+	font-size: 10pt;
+}
+
+/* 詳細検索ダイアログ内divタグ内のスタイル */
+#search-dialog > div{
+	padding-top: 10px;
+}
+
+/* 詳細検索ダイアログ内のANDかOR選択プルダウンメニューのスタイル */
+#sd-search-andor {
+	margin-left: 180px;
+	margin-top: 10px;
+	width: 55px;
+}
+
+/* 詳細検索ダイアログ内対象プルダウンメニューのスタイル */
+#sd-search-target {
+	width: 80px;
+}
+
+/* 詳細検索ダイアログ内一致選択プルダウンメニューのスタイル */
+#sd-search-opt {
+	width: 100px;
+}
+
+/* 詳細検索ダイアログ内のテキストボックスのスタイル */
+#sd-search-text {
+	color: gray;;
+}
+
+/* ログイン・ログアウトボタンのスタイル */
+#login-button {
+	width: 170px;
+	height: 20px;
+	border-bottom: 1px gray solid;
+	padding: 2px;
+	text-align: center;
+}
+
+/* ログインフォームのスタイル  */
+#login-forms {
+	padding: 2px 5px 5px 5px;
+	width: 164px;
+	height: 45px;
+	display: table-cell;
+	vertical-align: bottom;
+	font-size: 9pt;
+	text-align: center;
+}
+
+#login-forms > input {
+	width: 90px;
+}
+
+/* ログインフォーム内のユーザＩＤ用テキストボックス */
+#login-forms > #login-user-id {
+	margin-left: 9px;
+}
+
+/* ログインフォーム内のパスワード用テキストボックス */
+#login-forms > #login-password {
+	margin-left: 3px;
+}
+
+/* 右回り込み用クラス */
+.right-float {
+	float: right;
+}
+
+/* 両回り込み解除用クラス */
+.clear-both {
+	clear: both;
+}
+
+/* ランキングタイトルのスタイル */
+.ranking-title {
+	position: relative;
+
+	text-align: center;
+	width: 168px;
+	height: 23px;
+	border: 1px lightgray solid;
+	font-size: 11pt;
+}
+
+/* ランキング非表示動作領域のスタイル */
+#rank-hide-button {
+	position: absolute;
+
+	text-align: center;
+
+	height: 23px;
+	border: 1px orange solid;
+	left: 168px;
+	font-size: 11pt;
+	line-height: 22px;
+}
+
+/* ランキングの１項目のスタイル */
+.ranking-item {
+	position: relative;
+
+	font-size: 12px;
+	width: 170px;
+	height: 66px;
+	border: 1px lightgray solid;
+}
+
+.ranking-item > div {
+	padding: 3px;
+}
+
+/* ランキング項目の店舗画像用スタイル */
+.ranking-item > div .shop-image {
+	float: left;
+	border: 0;
+	width: 60px;
+	height: 60px;
+}
+
+.ranking-item > div div {
+	margin-left: 65px;
+	padding-right: 2px;
+	word-break: break-all;
+}
+
+/* ランキング項目のアンカー要素のスタイル */
+.ranking-item > div a {
+	color: black;
+}
+
+.ranking-item > div a:hover {
+	color: dimgray;
+}
+
+/* 店舗一覧の１セルのスタイル */
+.shop-cell {
+	float: left;
+	border: 1px lightgray solid;
+	margin: 3px;
+	background-color: chocolate;
+}
+
+.shop-cell > div {
+	padding: 5px;
+	width: 275px;
+	height:261px;
+}
+
+/* 店舗一覧セルの店舗画像のスタイル */
+.shop-cell > div .shop-image {
+	float: left;
+	width: 110px;
+	height: 134px;
+	border: 0;
+}
+
+.shop-cell > div > div {
+	word-break: break-all;
+	background-color: white;
+}
+
+.shop-cell > div > .shop-name, .shop-cell > div > .shop-author,
+.shop-cell > div > .shop-date {
+	width: 153px;
+	margin-left: 115px;
+}
+
+/* 店舗一覧セルの店舗所有者のスタイル */
+.shop-cell > div > .shop-author {
+	height: 34px;
+	margin-top: 3px;
+	font-size: 9pt;
+	padding: 2px 2px 2px 5px;
+}
+
+/* 店舗一覧セルの店舗作成日のスタイル */
+.shop-cell > div > .shop-date {
+	margin-top: 3px;
+	font-size: 9pt;
+	padding: 2px 2px 2px 5px;
+}
+
+/* 店舗一覧セルの店舗名のスタイル */
+.shop-cell > div > .shop-name {
+	font-size: 11pt;
+	line-height: 15px;
+	height: 70px;
+	padding: 3px 2px 0 5px;
+
+}
+
+.shop-cell > div > .shop-name > a {
+	color: black;
+}
+
+.shop-cell > div > .shop-name > a:hover {
+	color: dimgray;
+}
+
+/* 店舗一覧セルの店舗説明文のスタイル */
+.shop-cell > div > .shop-description {
+	position: relative;
+
+	margin-top: 3px;
+	font-size: 9.5pt;
+	height: 92px;
+	padding: 5px 2px 5px 5px;
+}
+
+.shop-cell > div > .shop-status {
+	position: relative;
+
+	margin-top: 3px;
+	font-size: 9.5pt;
+	padding: 2px 2px 2px 5px;
+}
+
+/* 店舗一覧セルのイイね!ボタンのスタイル */
+.shop-nice-button {
+	position: absolute;
+	top: 62px;
+	left: 190px;
+
+	width: 50px;
+	height: 18px;
+}
+
+/* 店舗一覧セルのイイね!数表示域のスタイル */
+.shop-nice-balloon {
+	position: absolute;
+	top: 62px;
+	left: 242px;
+
+	width: 30px;
+	height: 18px;
+}
+
+/* 店舗一覧セルのイイね!数テキストのスタイル */
+.shop-nice-balloon-text {
+	position: absolute;
+	top: 65px;
+	left: 250px;
+
+	width: 30px;
+
+	font-size: 9pt;
+}
+
+/* ランキング項目のイイね!ボタンのスタイル */
+.rank-nice-button {
+	position: absolute;
+	top: 48px;
+	left: 130px;
+
+	width: 35px;
+	height: 14px;
+}
+
+/* ランキング項目のイイね!数領域のスタイル */
+.rank-nice-balloon {
+	position: absolute;
+	top: 48px;
+	left: 168px;
+
+	width: 30px;
+	height: 14px;
+}
+
+/* ランキング項目のイイね!数テキストのスタイル */
+.rank-nice-balloon-text {
+	position: absolute;
+	top: 50px;
+	left: 176px;
+
+	width: 30px;
+
+	font-size: 8pt;
+}
+
+/* 店舗一覧のタイトル用テキストスタイル */
+.search-result-title {
+	margin: 5px 0 0 5px;
+	height: 35px;
+}
+
+/* 店舗一覧セル同士の空間 */
+.shopcell-margin {
+	float: left;
+	height: 10px;
+}
+
+/* ページャのスタイル */
+.pager {
+	padding: 5px 0 0 5px;
+}
+
+/* ページャ内DIVのスタイル */
+.pager > div{
+	float: left;
+	width: 20px;
+	height: 25px;
+	background-color: yellow;
+	border: 1px black solid;
+	cursor: pointer;
+	margin-right: 5px;
+	text-align: center;
+	padding-top: 5px;
+}
+
+.pager > .current-page {
+	background-color: silver;
+}
+
+.pager > .prev-next-page {
+	width: 90px;
+}
+
+#pager-area > .pager {
+	float: left;
+}
+
+#pager-select {
+	padding-top: 15px;
+	float:right;
+}
+
+/* ランキング表示動作領域のスタイル */
+#rank-show-button {
+	cursor: pointer;
+}
+
+/* タブ内コンテンツのスタイル */
+.tab-content th,td{
+	padding: 5px;
+}
+
+.tab-content .cart-number{
+	width: 50px;
+}
+
+.tab-content > div{
+	font-size: 12pt;
+	margin-bottom: 5px;
+}
+
+/* カート内購入手続きボタンのスタイル */
+.cart-buy-btn {
+	margin: 10px;
+}
+
+.tab-content {
+	font-size: 10pt;
+}
+
+/* お届け先入力フォームのスタイル */
+#buy-input{
+	font-size: 10pt;
+}
+
+#buy-input table {
+	margin: 8px;
+}
+
+#buy-input th,td{
+	padding: 3px;
+}
+
+#buy-input-name, #buy-input-email, #buy-input-tel {
+	width: 160px;
+}
+
+#buy-input-address {
+	width: 250px;
+}
+
+/* タブタイトルのスタイル */
+.tab-style-title {
+	font-size: 9pt;
+}
+
+/* タブコンテンツのスタイル */
+.tab-style-content {
+	font-size: 11pt;
+}
+
+/* 店舗追加・修正フォームのスタイル群 */
+.ashop-table {
+	font-size: 10pt;
+}
+
+#ashop-name, #ashop-category {
+	width: 200px;
+}
+
+#ashop-picurl {
+	width: 400px;
+}
+
+#ashop-description {
+	width: 300px;
+	height: 80px;
+}
+
+#ashop-script-source {
+	height: 450px;
+}
+
+.shop-feature {
+	width: 300px;
+}
+
+#ashop-shop-bg-color {
+	width: 215px;
+}
+
+#color-table-area {
+	position: relative;
+	left: 0;
+	top: 0;
+	padding: 0;
+}
+.color-table-pointer {
+	cursor: pointer;
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+/* スタイル群終わり */
+
+/* 掲示板のスタイル群 */
+.bbs-table {
+	width: 600px;
+	margin-bottom: 10px;
+
+	border: 2px black solid;
+}
+
+.bbs-id {
+	width: 15%;
+	text-align: center;
+	font-size: 11pt;
+}
+
+.bbs-userid {
+	width: 30%;
+	text-align: center;
+	font-size: 11pt;
+}
+
+.bbs-category {
+	width: 15%;
+	text-align: center;
+	font-size: 11pt;
+}
+
+.bbs-time {
+	width: 40%;
+	text-align: center;
+	font-size: 11pt;
+}
+
+#bbs-post-table {
+	font-size: 11pt;
+}
+
+#bbs-post-table th {
+	width: 70px;
+}
+
+#bbs-post-table textarea{
+	width: 300px;
+	height: 100px;
+}
+/* スタイル群終わり */
+
+
+/* スタートページタブのリスト要素のスタイル */
+.top-list-margin {
+	margin-left: 20px;
+}
+
+/* ユーザ追加管理メニューのスタイル群 */
+#user-list td{
+	padding: 6px;
+}
+
+#user-search-box {
+	width: 100px;
+}
+
+#add-user-dialog {
+	font-size: 12pt;
+}
+
+#add-user-text {
+	width: 450px;
+	height: 300px;
+}
+/* スタイル群終わり */
+
+/* 店舗管理での店舗選択状態のスタイル */
+.shop-select {
+	background-color: yellow !important;
+}
+
+/* 管理メニューのクエリテキストボックスでのスタイル */
+#query-text {
+	width: 150px;
+}
+
+/* DBテーブル管理でのスタイル群 */
+.sql-input-textbox {
+	width: 800px;
+	height: 200px;
+}
+
+#dlg-add-table-sql-text {
+	width: 550px;
+	height: 300px;
+}
+
+#dlg-alter-table-sql-text {
+	width: 800px;
+	height: 450px;
+}
+
+.alter-table-textbox {
+	width: 100px;
+}
+
+.dlg-name-textbox {
+	width: 200px;
+}
+
+/* クレジットスタイル */
+#credit-textarea {
+	overflow-y: hidden;
+	overflow-x:hidden;
+	width:470px;
+	height:370px;
+	font-size:2pt;
+	line-height:1;
+	font-family:monospace;
+
+	-webkit-text-size-adjust: none;
+}
+
+#image-textarea {
+	overflow-y: scroll;
+	overflow-x: scroll;
+	width:350px;
+	height:320px;
+	font-size:2pt;
+	line-height:1;
+	font-family:monospace;
+
+	-webkit-text-size-adjust: none;
+}
+
+
+/* スタイル群終わり */
+
+
+/* 汎用スタイル */
+.buttons {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.margins {
+	margin: 10px;
+}
+
+.warning {
+	color: red;
+
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.status-area {
+	margin-left: 20px;
+	background-color: white;
+	padding: 5px;
+}
+
+hr {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+/* jQuery ui のダイアログのタイトルバーサイズ修正 */
+.ui-dialog-titlebar {
+	font-size: 10pt;
+	text-align: left;
+	line-height: normal;
+}
+

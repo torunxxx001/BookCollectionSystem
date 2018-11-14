@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<display fps="60.0">
+	<screen default="1" id="FRAMEBUFFER" color="#FFFFFF" direction="normal">
+		<framebuffer id="FB" position="0,0" size="240,320" visible="1" enable="1" rotate="1"/>
+
+		<button id="RETURN_BUTTON" position="220,300" size="20,20" font_size="8" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">
+			B
+		</button>
+
+		<text id="COMMAND_TEXT" position="0,0" size="0,0" visible="0"/>
+	</screen>
+
+
+
+
+
+
+
+
+
+	<screen id="KEYBOARD_PAD" color="#D0D0D0" direction="left">
+		<button id="KEY1" position="12,113" size="56,55" font_size="30" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">1</button>
+		<button id="KEY2" position="72,113" size="56,55" font_size="30" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">2</button>
+		<button id="KEY3" position="132,113" size="56,55" font_size="30" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">3</button>
+		<button id="KEY4" position="192,113" size="56,55" font_size="30" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">4</button>
+		<button id="KEY5" position="252,113" size="56,55" font_size="30" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">5</button>
+		<button id="KEY6" position="12,178" size="56,55" font_size="30" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">6</button>
+		<button id="KEY7" position="72,178" size="56,55" font_size="30" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">7</button>
+		<button id="KEY8" position="132,178" size="56,55" font_size="30" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">8</button>
+		<button id="KEY9" position="192,178" size="56,55" font_size="30" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">9</button>
+		<button id="KEY0" position="252,178" size="56,55" font_size="30" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">0</button>
+
+		<text id="TEXT" position="5,5" size="310,25" font_size="12" color="#FFFFFF" font_color="#000000" border_color="#000000">文字を入力：</text>
+		<text id="INSTRING" position="5,30" size="310,45" font_size="16" color="#FFFFFF" font_color="#000000" border_color="#000000"/>
+
+		<button id="DELETE" position="180,80" size="60,25" font_size="12" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">DEL</button>
+		<button id="ENTER" position="255,80" size="60,25" font_size="12" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">確定</button>
+
+	</screen>
+
+	<screen id="KEYBOARD_LOWER" color="#D0D0D0" direction="left">
+		<button id="KEY1" position="12,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">1</button>
+		<button id="KEY2" position="42,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">2</button>
+		<button id="KEY3" position="72,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">3</button>
+		<button id="KEY4" position="102,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">4</button>
+		<button id="KEY5" position="132,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">5</button>
+		<button id="KEY6" position="162,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">6</button>
+		<button id="KEY7" position="192,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">7</button>
+		<button id="KEY8" position="222,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">8</button>
+		<button id="KEY9" position="252,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">9</button>
+		<button id="KEY0" position="282,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">0</button>
+
+		<button id="KEYQ" position="12,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">q</button>
+		<button id="KEYW" position="42,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">w</button>
+		<button id="KEYE" position="72,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">e</button>
+		<button id="KEYR" position="102,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">r</button>
+		<button id="KEYT" position="132,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">t</button>
+		<button id="KEYY" position="162,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">y</button>
+		<button id="KEYU" position="192,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">u</button>
+		<button id="KEYI" position="222,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">i</button>
+		<button id="KEYO" position="252,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">o</button>
+		<button id="KEYP" position="282,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">p</button>
+
+		<button id="KEYA" position="25,175" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">a</button>
+		<button id="KEYS" position="55,175" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">s</button>
+		<button id="KEYD" position="85,175" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">d</button>
+		<button id="KEYF" position="115,175" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">f</button>
+		<button id="KEYG" position="145,175" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">g</button>
+		<button id="KEYH" position="175,175" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">h</button>
+		<button id="KEYJ" position="205,175" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">j</button>
+		<button id="KEYK" position="235,175" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">k</button>
+		<button id="KEYL" position="265,175" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">l</button>
+
+		<button id="KEYZ" position="47,206" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">z</button>
+		<button id="KEYX" position="77,206" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">x</button>
+		<button id="KEYC" position="107,206" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">c</button>
+		<button id="KEYV" position="137,206" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">v</button>
+		<button id="KEYB" position="167,206" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">b</button>
+		<button id="KEYN" position="197,206" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">n</button>
+		<button id="KEYM" position="227,206" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">m</button>
+		<button id="CHANGE" position="257,206" size="55,28" font_size="12" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">大文字</button>
+
+		<text id="TEXT" position="5,5" size="310,25" font_size="12" color="#FFFFFF" font_color="#000000" border_color="#000000">文字を入力：</text>
+		<text id="INSTRING" position="5,30" size="310,45" font_size="16" color="#FFFFFF" font_color="#000000" border_color="#000000"/>
+
+		<button id="DELETE" position="180,80" size="60,25" font_size="12" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">DEL</button>
+		<button id="ENTER" position="255,80" size="60,25" font_size="12" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">確定</button>
+	</screen>
+
+	<screen id="KEYBOARD_UPPER" color="#D0D0D0" direction="left">
+		<button id="KEY1" position="12,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">1</button>
+		<button id="KEY2" position="42,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">2</button>
+		<button id="KEY3" position="72,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">3</button>
+		<button id="KEY4" position="102,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">4</button>
+		<button id="KEY5" position="132,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">5</button>
+		<button id="KEY6" position="162,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">6</button>
+		<button id="KEY7" position="192,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">7</button>
+		<button id="KEY8" position="222,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">8</button>
+		<button id="KEY9" position="252,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">9</button>
+		<button id="KEY0" position="282,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">0</button>
+
+		<button id="KEYQ" position="12,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">Q</button>
+		<button id="KEYW" position="42,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">W</button>
+		<button id="KEYE" position="72,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">E</button>
+		<button id="KEYR" position="102,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">R</button>
+		<button id="KEYT" position="132,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">T</button>
+		<button id="KEYY" position="162,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">Y</button>
+		<button id="KEYU" position="192,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">U</button>
+		<button id="KEYI" position="222,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">I</button>
+		<button id="KEYO" position="252,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">O</button>
+		<button id="KEYP" position="282,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">P</button>
+
+		<button id="KEYA" position="25,175" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">A</button>
+		<button id="KEYS" position="55,175" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">S</button>
+		<button id="KEYD" position="85,175" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">D</button>
+		<button id="KEYF" position="115,175" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">F</button>
+		<button id="KEYG" position="145,175" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">G</button>
+		<button id="KEYH" position="175,175" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">H</button>
+		<button id="KEYJ" position="205,175" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">J</button>
+		<button id="KEYK" position="235,175" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">K</button>
+		<button id="KEYL" position="265,175" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">L</button>
+
+		<button id="KEYZ" position="47,206" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">Z</button>
+		<button id="KEYX" position="77,206" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">X</button>
+		<button id="KEYC" position="107,206" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">C</button>
+		<button id="KEYV" position="137,206" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">V</button>
+		<button id="KEYB" position="167,206" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">B</button>
+		<button id="KEYN" position="197,206" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">N</button>
+		<button id="KEYM" position="227,206" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">M</button>
+		<button id="CHANGE" position="257,206" size="55,28" font_size="12" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">記号</button>
+
+		<text id="TEXT" position="5,5" size="310,25" font_size="12" color="#FFFFFF" font_color="#000000" border_color="#000000">文字を入力：</text>
+		<text id="INSTRING" position="5,30" size="310,45" font_size="16" color="#FFFFFF" font_color="#000000" border_color="#000000"/>
+
+		<button id="DELETE" position="180,80" size="60,25" font_size="12" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">DEL</button>
+		<button id="ENTER" position="255,80" size="60,25" font_size="12" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">確定</button>
+	</screen>
+
+	<screen id="KEYBOARD_SYMBOL" color="#D0D0D0" direction="left">
+		<button id="KEYS1" position="12,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">!</button>
+		<button id="KEYS2" position="42,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">&quot;</button>
+		<button id="KEYS3" position="72,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">#</button>
+		<button id="KEYS4" position="102,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">$</button>
+		<button id="KEYS5" position="132,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">%</button>
+		<button id="KEYS6" position="162,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">&amp;</button>
+		<button id="KEYS7" position="192,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">&apos;</button>
+		<button id="KEYS8" position="222,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">(</button>
+		<button id="KEYS9" position="252,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">)</button>
+		<button id="KEYS10" position="282,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">-</button>
+
+		<button id="KEYS11" position="12,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">^</button>
+		<button id="KEYS12" position="42,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">\</button>
+		<button id="KEYS13" position="72,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">@</button>
+		<button id="KEYS14" position="102,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">[</button>
+		<button id="KEYS15" position="132,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">;</button>
+		<button id="KEYS16" position="162,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">:</button>
+		<button id="KEYS17" position="192,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">]</button>
+		<button id="KEYS18" position="222,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">,</button>
+		<button id="KEYS19" position="252,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">/</button>
+		<button id="KEYS20" position="282,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">=</button>
+
+		<button id="KEYS21" position="25,175" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">~</button>
+		<button id="KEYS22" position="55,175" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">|</button>
+		<button id="KEYS23" position="85,175" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">`</button>
+		<button id="KEYS24" position="115,175" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">{</button>
+		<button id="KEYS25" position="145,175" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">+</button>
+		<button id="KEYS26" position="175,175" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">*</button>
+		<button id="KEYS27" position="205,175" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">}</button>
+		<button id="KEYS28" position="235,175" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">&lt;</button>
+		<button id="KEYS29" position="265,175" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">&gt;</button>
+
+		<button id="KEYS30" position="47,206" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">?</button>
+		<button id="KEYS31" position="77,206" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">_</button>
+		<button id="KEYS32" position="107,206" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000"></button>
+		<button id="KEYS33" position="137,206" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000"></button>
+		<button id="KEYS34" position="167,206" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000"></button>
+		<button id="SPACE" position="197,206" size="55,28" font_size="10" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">SPACE</button>
+		<button id="CHANGE" position="257,206" size="55,28" font_size="12" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">小文字</button>
+
+		<text id="TEXT" position="5,5" size="310,25" font_size="12" color="#FFFFFF" font_color="#000000" border_color="#000000">文字を入力：</text>
+		<text id="INSTRING" position="5,30" size="310,45" font_size="16" color="#FFFFFF" font_color="#000000" border_color="#000000"/>
+
+		<button id="DELETE" position="180,80" size="60,25" font_size="12" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">DEL</button>
+		<button id="ENTER" position="255,80" size="60,25" font_size="12" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">確定</button>
+	</screen>
+</display>

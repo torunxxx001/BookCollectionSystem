@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<display fps="60.0" sleep="300">
+	<screen default="1" id="LOGIN" color="#FFFFFF" direction="left">
+		<text id="MESSAGE" depth="-1" visible="0" position="20,20" size="280,200" font_size="12" color="#FFFFC4" font_color="#000000" border_color="#000000"/>
+		<button id="MSGOK" depth="-1" visible="0" position="140,185" size="38,28" font_size="14" color="#707070" font_color="#000000" push_color="#00FF00" border_color="#000000">OK</button>
+
+		<image id="BG" position="0,0" size="320,240" color="#000000" path="form_img/base.png"/>
+		<text id="S_TITLE" position="5,8" size="180,30" font_size="16" color="#FFFFFF" font_color="#000000" border_color="#FFFFFF">
+			蔵書管理システム
+		</text>
+		<text id="L_FORM_TITLE" position="219,5" size="95,18" font_size="9" color="#FFFFFF" font_color="#000000" border_color="#000000" halign="center">
+			ステータス
+		</text>
+		<text id="L_FORM_STATUS" position="222,23" size="90,18" font_size="10" color="#FFFFFF" font_color="#000000" border_color="#FFFFFF" halign="center" valign="center">
+			未ログイン
+		</text>
+		<text id="CUR_TITLE" position="12,50" size="303,18" font_size="11" color="#FFFFFF" font_color="#000000" border_color="#FFFFFF">
+			ログイン画面
+		</text>
+
+		<text id="TEXT1" position="10,80" size="308,18" font_size="12" color="#FFFFFF" font_color="#000000" border_color="#FFFFFF">
+			IDとパスワードを入力してください
+		</text>
+		<text id="TEXT2" position="10,98" size="308,18" font_size="9" color="#FFFFFF" font_color="#000000" border_color="#FFFFFF">
+			※テキストボックスをタッチすると入力できます
+		</text>
+		<text id="TEXT3" position="15,122" size="110,18" font_size="12" color="#FFFFFF" font_color="#000000" border_color="#FFFFFF" halign="right">
+			ユーザID：
+		</text>
+		<text id="TEXT4" position="15,157" size="110,18" font_size="12" color="#FFFFFF" font_color="#000000" border_color="#FFFFFF" halign="right">
+			パスワード：
+		</text>
+		<text id="USER_ID" enable="1" position="130,120" size="170,25" font_size="16" color="#FFFFFF" font_color="#000000" push_color="#707070" border_color="#000000" valign="center"/>
+		<password id="PASSWORD" enable="1" position="130,155" size="170,25" font_size="16" color="#FFFFFF" font_color="#000000" push_color="#707070" border_color="#000000" valign="center"/>
+
+		<button id="LOGIN_BUTTON" position="210,190" size="95,28" font_size="16" color="#909090" font_color="#000000" push_color="#00FF00" border_color="#000000">
+			ログイン
+		</button>
+	</screen>
+
+	<screen id="TOP_NORMAL" color="#FFFFFF" direction="left">
+		<image id="BG" position="0,0" size="320,240" color="#000000" path="form_img/top.png"/>
+
+		<text id="S_TITLE" position="5,8" size="180,30" font_size="16" color="#FFFFFF" font_color="#000000" border_color="#FFFFFF">
+			蔵書管理システム
+		</text>
+		<text id="L_FORM_TITLE" position="219,5" size="95,18" font_size="9" color="#FFFF80" font_color="#000000" border_color="#000000" halign="center">
+			ログイン済
+		</text>
+		<text id="L_FORM_STATUS" position="222,23" size="90,18" font_size="10" color="#FFFFFF" font_color="#000000" border_color="#FFFFFF" halign="center" valign="center"/>
+		<text id="CUR_TITLE" position="12,50" size="303,18" font_size="11" color="#FFFFFF" font_color="#000000" border_color="#FFFFFF">
+			トップ画面
+		</text>
+
+		<button id="MENU_BORROW" position="1,91" size="66,25" font_size="13" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#000000">
+			貸出
+		</button>
+		<button id="MENU_RETURN" position="1,116" size="66,25" font_size="13" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#000000">
+			返却
+		</button>
+		<button id="MENU_CHECK" position="1,141" size="66,25" font_size="13" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#000000">
+			確認
+		</button>
+		<button id="MENU_LOGOUT" position="1,166" size="66,25" font_size="9" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#000000">
+			ログアウト
+		</button>
+
+		<text id="TEXT1" position="75,80" size="243,20" font_size="13" color="#FFFFFF" font_color="#000000" border_color="#FFFFFF">
+			蔵書管理システムへようこそ
+		</text>
+		<text id="TEXT2" position="85,100" size="233,35" font_size="11" color="#FFFFFF" font_color="#000000" border_color="#FFFFFF">
+			左のメニューから行いたい動作をタッチしてください。
+		</text>
+		<text id="TEXT3" position="75,140" size="243,18" font_size="11" color="#FFFFFF" font_color="#000000" border_color="#FFFFFF">
+			・貸出 - 図書の貸出処理
+		</text>
+		<text id="TEXT4" position="75,158" size="243,18" font_size="11" color="#FFFFFF" font_color="#000000" border_color="#FFFFFF">
+			・返却 - 図書の返却処理
+		</text>
+		<text id="TEXT5" position="75,179" size="243,18" font_size="11" color="#FFFFFF" font_color="#000000" border_color="#FFFFFF">
+			・確認 - 借用図書を確認
+		</text>
+	</screen>
+
+	<screen id="TOP_ADMIN" color="#FFFFFF" direction="left">
+		<image id="BG" position="0,0" size="320,240" color="#000000" path="form_img/top.png"/>
+
+		<button id="SHOW_CONSOLE" position="5,8" size="180,30" font_size="16" color="#FFFFFF" push_color="#00FF00" font_color="#000000" border_color="#BBBBBB">
+			蔵書管理システム
+		</button>
+		<text id="L_FORM_TITLE" position="219,5" size="95,18" font_size="9" color="#FFFF80" font_color="#000000" border_color="#000000" halign="center">
+			ログイン済
+		</text>
+		<text id="L_FORM_STATUS" position="222,23" size="90,18" font_size="10" color="#FFFFFF" font_color="#000000" border_color="#FFFFFF" halign="center" valign="center"/>
+		<text id="CUR_TITLE" position="12,50" size="303,18" font_size="11" color="#FFFFFF" font_color="#000000" border_color="#FFFFFF">
+			管理用トップ画面
+		</text>
+
+		<button id="MENU_BORROW" position="1,91" size="66,25" font_size="13" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#000000">
+			貸出
+		</button>
+		<button id="MENU_RETURN" position="1,116" size="66,25" font_size="13" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#000000">
+			返却
+		</button>
+		<button id="MENU_CHECK" position="1,141" size="66,25" font_size="13" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#000000">
+			確認
+		</button>
+		<button id="MENU_BREGIST" position="1,166" size="66,25" font_size="10" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#000000">
+			図書登録
+		</button>
+		<button id="MENU_LOGOUT" position="1,191" size="66,25" font_size="9" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#000000">
+			ログアウト
+		</button>
+
+		<text id="TEXT1" position="75,80" size="243,20" font_size="13" color="#FFFFFF" font_color="#000000" border_color="#FFFFFF">
+			蔵書管理システムへようこそ
+		</text>
+		<text id="TEXT2" position="85,100" size="233,35" font_size="11" color="#FFFFFF" font_color="#000000" border_color="#FFFFFF">
+			左のメニューから行いたい動作をタッチしてください。
+		</text>
+		<text id="TEXT3" position="75,135" size="243,18" font_size="11" color="#FFFFFF" font_color="#000000" border_color="#FFFFFF">
+			・貸出 - 図書の貸出処理
+		</text>
+		<text id="TEXT4" position="75,153" size="243,18" font_size="11" color="#FFFFFF" font_color="#000000" border_color="#FFFFFF">
+			・返却 - 図書の返却処理
+		</text>
+		<text id="TEXT5" position="75,171" size="243,18" font_size="11" color="#FFFFFF" font_color="#000000" border_color="#FFFFFF">
+			・確認 - 借用図書を確認
+		</text>
+		<text id="TEXT6" position="75,189" size="243,18" font_size="11" color="#FFFFFF" font_color="#000000" border_color="#FFFFFF">
+			・図書登録 - 新規図書を登録
+		</text>
+	</screen>
+
+	<screen id="BORROW_SCR" color="#FFFFFF" direction="left">
+		<text id="MESSAGE" visible="0" depth="-1" position="20,20" size="280,200" font_size="12" color="#FFFFC4" font_color="#000000" border_color="#000000"/>
+		<button id="MSGOK" visible="0" depth="-1" position="140,185" size="38,28" font_size="14" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#000000">OK</button>
+		<button id="MSG_GOTOP" visible="0" depth="-1" position="100,185" size="123,28" font_size="14" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#000000">トップ画面へ</button>
+
+		<image id="COVER_IMG" visible="0" depth="-1" position="230,135" size="65,80" color="#000000"/>
+
+
+		<image id="BG" position="0,0" size="320,240" color="#000000" path="form_img/list.png"/>
+
+		<text id="S_TITLE" position="5,8" size="180,30" font_size="16" color="#FFFFFF" font_color="#000000" border_color="#FFFFFF">
+			蔵書管理システム
+		</text>
+		<text id="L_FORM_TITLE" position="219,5" size="95,18" font_size="9" color="#FFFF80" font_color="#000000" border_color="#000000" halign="center">
+			ログイン済
+		</text>
+		<text id="L_FORM_STATUS" position="222,23" size="90,18" font_size="10" color="#FFFFFF" font_color="#000000" border_color="#FFFFFF" halign="center" valign="center"/>
+		<text id="CUR_TITLE" position="12,50" size="303,18" font_size="11" color="#FFFFFF" font_color="#000000" border_color="#FFFFFF">
+			貸出処理
+		</text>
+
+		<text id="EXPLAIN1" enable="1" position="12,75" size="297,20" font_size="13" color="#FFFFFF" font_color="#000000" push_color="#707070" border_color="#FFFFFF">
+			ここは図書貸出処理画面です
+		</text>
+		<text id="EXPLAIN2" enable="1" position="12,95" size="297,20" font_size="11" color="#FFFFFF" font_color="#000000" push_color="#707070" border_color="#FFFFFF">
+			　借りる図書のISBNを読取ってください
+		</text>
+		<text id="EXPLAIN3" enable="1" position="12,115" size="297,40" font_size="10" color="#FFFFFF" font_color="#000000" push_color="#707070" border_color="#FFFFFF">
+			　※図書リストの本タイトル横のXをクリック　するとその本を取消すことができます
+		</text>
+
+		<text id="ITEM1" enable="1" visible="0" position="35,78" size="251,20" font_size="11" color="#FFFFFF" font_color="#000000" push_color="#707070" border_color="#707070" halign="left"/>
+		<text id="ITEM2" enable="1" visible="0" position="35,100" size="251,20" font_size="11" color="#FFFFFF" font_color="#000000" push_color="#707070" border_color="#707070" halign="left"/>
+		<text id="ITEM3" enable="1" visible="0" position="35,122" size="251,20" font_size="11" color="#FFFFFF" font_color="#000000" push_color="#707070" border_color="#707070" halign="left"/>
+		<text id="ITEM4" enable="1" visible="0" position="35,144" size="251,20" font_size="11" color="#FFFFFF" font_color="#000000" push_color="#707070" border_color="#707070" halign="left"/>
+		<text id="ITEM5" enable="1" visible="0" position="35,166" size="251,20" font_size="11" color="#FFFFFF" font_color="#000000" push_color="#707070" border_color="#707070" halign="left"/>
+
+		<button id="IDEL1" visible="0" position="12,78" size="20,20" font_size="12" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#707070">X</button>
+		<button id="IDEL2" visible="0" position="12,100" size="20,20" font_size="12" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#707070">X</button>
+		<button id="IDEL3" visible="0" position="12,122" size="20,20" font_size="12" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#707070">X</button>
+		<button id="IDEL4" visible="0" position="12,144" size="20,20" font_size="12" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#707070">X</button>
+		<button id="IDEL5" visible="0" position="12,166" size="20,20" font_size="12" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#707070">X</button>
+
+		<button id="INFO1" visible="0" position="289,78" size="20,20" font_size="12" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#707070">I</button>
+		<button id="INFO2" visible="0" position="289,100" size="20,20" font_size="12" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#707070">I</button>
+		<button id="INFO3" visible="0" position="289,122" size="20,20" font_size="12" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#707070">I</button>
+		<button id="INFO4" visible="0" position="289,144" size="20,20" font_size="12" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#707070">I</button>
+		<button id="INFO5" visible="0" position="289,166" size="20,20" font_size="12" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#707070">I</button>
+
+		<button id="ENTER" visible="0" position="176,194" size="51,25" font_size="11" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#000000">
+			借りる
+		</button>
+		<button id="CANCEL" position="230,194" size="81,25" font_size="10" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#000000">
+			キャンセル
+		</button>
+
+		<button id="PREV_PAGE" position="15,194" size="30,25" font_size="12" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#000000">
+			&lt;&lt;
+		</button>
+		<button id="NEXT_PAGE" position="119,194" size="30,25" font_size="12" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#000000">
+			&gt;&gt;
+		</button>
+		<text id="PAGE_NUM" position="48,194" size="71,25" font_size="12" color="#FFFFFF" font_color="#000000" border_color="#FFFFFF" halign="center" valign="center">
+			00 / 00
+		</text>
+	</screen>
+
+	<screen id="RETURN_SCR" color="#FFFFFF" direction="left">
+		<text id="MESSAGE" visible="0" depth="-1" position="20,20" size="280,200" font_size="12" color="#FFFFC4" font_color="#000000" border_color="#000000"/>
+		<button id="MSGOK" visible="0" depth="-1" position="140,185" size="38,28" font_size="14" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#000000">OK</button>
+		<button id="MSG_GOTOP" visible="0" depth="-1" position="100,185" size="123,28" font_size="14" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#000000">トップ画面へ</button>
+
+		<image id="COVER_IMG" visible="0" depth="-1" position="230,135" size="65,80" color="#000000"/>
+
+		<image id="BG" position="0,0" size="320,240" color="#000000" path="form_img/list.png"/>
+
+		<text id="S_TITLE" position="5,8" size="180,30" font_size="16" color="#FFFFFF" font_color="#000000" border_color="#FFFFFF">
+			蔵書管理システム
+		</text>
+		<text id="L_FORM_TITLE" position="219,5" size="95,18" font_size="9" color="#FFFF80" font_color="#000000" border_color="#000000" halign="center">
+			ログイン済
+		</text>
+		<text id="L_FORM_STATUS" position="222,23" size="90,18" font_size="10" color="#FFFFFF" font_color="#000000" border_color="#FFFFFF" halign="center" valign="center"/>
+		<text id="CUR_TITLE" position="12,50" size="303,18" font_size="11" color="#FFFFFF" font_color="#000000" border_color="#FFFFFF">
+			返却処理
+		</text>
+
+		<text id="EXPLAIN1" enable="1" position="12,75" size="297,20" font_size="13" color="#FFFFFF" font_color="#000000" push_color="#707070" border_color="#FFFFFF">
+			ここは図書返却処理画面です
+		</text>
+		<text id="EXPLAIN2" enable="1" position="12,95" size="297,20" font_size="11" color="#FFFFFF" font_color="#000000" push_color="#707070" border_color="#FFFFFF">
+			　返す図書のISBNを読取ってください
+		</text>
+		<text id="EXPLAIN3" enable="1" position="12,115" size="297,40" font_size="10" color="#FFFFFF" font_color="#000000" push_color="#707070" border_color="#FFFFFF">
+			　※図書リストの本タイトル横のXをクリック　するとその本を取消すことができます
+		</text>
+
+		<text id="ITEM1" enable="1" visible="0" position="35,78" size="251,20" font_size="11" color="#FFFFFF" font_color="#000000" push_color="#707070" border_color="#707070" halign="left"/>
+		<text id="ITEM2" enable="1" visible="0" position="35,100" size="251,20" font_size="11" color="#FFFFFF" font_color="#000000" push_color="#707070" border_color="#707070" halign="left"/>
+		<text id="ITEM3" enable="1" visible="0" position="35,122" size="251,20" font_size="11" color="#FFFFFF" font_color="#000000" push_color="#707070" border_color="#707070" halign="left"/>
+		<text id="ITEM4" enable="1" visible="0" position="35,144" size="251,20" font_size="11" color="#FFFFFF" font_color="#000000" push_color="#707070" border_color="#707070" halign="left"/>
+		<text id="ITEM5" enable="1" visible="0" position="35,166" size="251,20" font_size="11" color="#FFFFFF" font_color="#000000" push_color="#707070" border_color="#707070" halign="left"/>
+
+		<button id="IDEL1" visible="0" position="12,78" size="20,20" font_size="12" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#707070">X</button>
+		<button id="IDEL2" visible="0" position="12,100" size="20,20" font_size="12" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#707070">X</button>
+		<button id="IDEL3" visible="0" position="12,122" size="20,20" font_size="12" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#707070">X</button>
+		<button id="IDEL4" visible="0" position="12,144" size="20,20" font_size="12" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#707070">X</button>
+		<button id="IDEL5" visible="0" position="12,166" size="20,20" font_size="12" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#707070">X</button>
+
+		<button id="INFO1" visible="0" position="289,78" size="20,20" font_size="12" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#707070">I</button>
+		<button id="INFO2" visible="0" position="289,100" size="20,20" font_size="12" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#707070">I</button>
+		<button id="INFO3" visible="0" position="289,122" size="20,20" font_size="12" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#707070">I</button>
+		<button id="INFO4" visible="0" position="289,144" size="20,20" font_size="12" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#707070">I</button>
+		<button id="INFO5" visible="0" position="289,166" size="20,20" font_size="12" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#707070">I</button>
+
+		<button id="ENTER" visible="0" position="176,194" size="51,25" font_size="11" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#000000">
+			返す
+		</button>
+		<button id="CANCEL" position="230,194" size="81,25" font_size="10" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#000000">
+			キャンセル
+		</button>
+
+		<button id="PREV_PAGE" position="15,194" size="30,25" font_size="12" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#000000">
+			&lt;&lt;
+		</button>
+		<button id="NEXT_PAGE" position="119,194" size="30,25" font_size="12" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#000000">
+			&gt;&gt;
+		</button>
+		<text id="PAGE_NUM" position="48,194" size="71,25" font_size="12" color="#FFFFFF" font_color="#000000" border_color="#FFFFFF" halign="center" valign="center">
+			00 / 00
+		</text>
+	</screen>
+
+	<screen id="CHECK_SCR" color="#FFFFFF" direction="left">
+		<text id="MESSAGE" visible="0" depth="-1" position="20,20" size="280,200" font_size="12" color="#FFFFC4" font_color="#000000" border_color="#000000"/>
+		<button id="MSGOK" visible="0" depth="-1" position="140,185" size="38,28" font_size="14" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#000000">OK</button>
+
+		<image id="COVER_IMG" visible="0" depth="-1" position="230,135" size="65,80" color="#000000"/>
+
+		<image id="BG" position="0,0" size="320,240" color="#000000" path="form_img/list.png"/>
+
+		<text id="S_TITLE" position="5,8" size="180,30" font_size="16" color="#FFFFFF" font_color="#000000" border_color="#FFFFFF">
+			蔵書管理システム
+		</text>
+		<text id="L_FORM_TITLE" position="219,5" size="95,18" font_size="9" color="#FFFF80" font_color="#000000" border_color="#000000" halign="center">
+			ログイン済
+		</text>
+		<text id="L_FORM_STATUS" position="222,23" size="90,18" font_size="10" color="#FFFFFF" font_color="#000000" border_color="#FFFFFF" halign="center" valign="center"/>
+		<text id="CUR_TITLE" position="12,50" size="303,18" font_size="11" color="#FFFFFF" font_color="#000000" border_color="#FFFFFF">
+			借用図書確認
+		</text>
+
+		<text id="ITEM1" enable="0" position="35,78" size="251,20" font_size="11" color="#FFFFFF" font_color="#000000" push_color="#707070" border_color="#707070" halign="left"/>
+		<text id="ITEM2" enable="0" position="35,100" size="251,20" font_size="11" color="#FFFFFF" font_color="#000000" push_color="#707070" border_color="#707070" halign="left"/>
+		<text id="ITEM3" enable="0" position="35,122" size="251,20" font_size="11" color="#FFFFFF" font_color="#000000" push_color="#707070" border_color="#707070" halign="left"/>
+		<text id="ITEM4" enable="0" position="35,144" size="251,20" font_size="11" color="#FFFFFF" font_color="#000000" push_color="#707070" border_color="#707070" halign="left"/>
+		<text id="ITEM5" enable="0" position="35,166" size="251,20" font_size="11" color="#FFFFFF" font_color="#000000" push_color="#707070" border_color="#707070" halign="left"/>
+
+		<button id="INFO1" position="289,78" size="20,20" font_size="12" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#707070">I</button>
+		<button id="INFO2" position="289,100" size="20,20" font_size="12" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#707070">I</button>
+		<button id="INFO3" position="289,122" size="20,20" font_size="12" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#707070">I</button>
+		<button id="INFO4" position="289,144" size="20,20" font_size="12" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#707070">I</button>
+		<button id="INFO5" position="289,166" size="20,20" font_size="12" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#707070">I</button>
+
+		<button id="CANCEL" position="176,194" size="135,25" font_size="14" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#000000">
+			トップ画面へ
+		</button>
+
+		<button id="PREV_PAGE" position="15,194" size="30,25" font_size="12" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#000000">
+			&lt;&lt;
+		</button>
+		<button id="NEXT_PAGE" position="119,194" size="30,25" font_size="12" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#000000">
+			&gt;&gt;
+		</button>
+		<text id="PAGE_NUM" position="48,194" size="71,25" font_size="12" color="#FFFFFF" font_color="#000000" border_color="#FFFFFF" halign="center" valign="center">
+			00 / 00
+		</text>
+	</screen>
+
+	<screen id="BREGIST_SCR" color="#FFFFFF" direction="left">
+		<text id="MESSAGE" visible="0" depth="-1" position="20,20" size="280,200" font_size="12" color="#FFFFC4" font_color="#000000" border_color="#000000"/>
+		<button id="MSGOK" visible="0" depth="-1" position="140,185" size="38,28" font_size="14" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#000000">OK</button>
+
+		<image id="COVER_IMG" visible="0" depth="-1" position="230,135" size="65,80" color="#000000"/>
+
+		<image id="BG" position="0,0" size="320,240" color="#000000" path="form_img/list.png"/>
+
+		<text id="S_TITLE" position="5,8" size="180,30" font_size="16" color="#FFFFFF" font_color="#000000" border_color="#FFFFFF">
+			蔵書管理システム
+		</text>
+		<text id="L_FORM_TITLE" position="219,5" size="95,18" font_size="9" color="#FFFF80" font_color="#000000" border_color="#000000" halign="center">
+			ログイン済
+		</text>
+		<text id="L_FORM_STATUS" position="222,23" size="90,18" font_size="10" color="#FFFFFF" font_color="#000000" border_color="#FFFFFF" halign="center" valign="center"/>
+		<text id="CUR_TITLE" position="12,50" size="303,18" font_size="11" color="#FFFFFF" font_color="#000000" border_color="#FFFFFF">
+			図書登録処理
+		</text>
+
+		<text id="EXPLAIN1" enable="1" position="12,75" size="297,20" font_size="13" color="#FFFFFF" font_color="#000000" push_color="#707070" border_color="#FFFFFF">
+			ここは図書登録処理画面です
+		</text>
+		<text id="EXPLAIN2" enable="1" position="12,95" size="297,20" font_size="11" color="#FFFFFF" font_color="#000000" push_color="#707070" border_color="#FFFFFF">
+			　登録する図書のISBNを読取ってください
+		</text>
+		<text id="EXPLAIN3" enable="1" position="12,115" size="297,40" font_size="10" color="#FFFFFF" font_color="#000000" push_color="#707070" border_color="#FFFFFF">
+			　※図書リストの本タイトル横のXをクリック　するとその本を取消すことができます
+		</text>
+
+		<text id="ITEM1" enable="1" visible="0" position="35,78" size="251,20" font_size="11" color="#FFFFFF" font_color="#000000" push_color="#707070" border_color="#707070" halign="left"/>
+		<text id="ITEM2" enable="1" visible="0" position="35,100" size="251,20" font_size="11" color="#FFFFFF" font_color="#000000" push_color="#707070" border_color="#707070" halign="left"/>
+		<text id="ITEM3" enable="1" visible="0" position="35,122" size="251,20" font_size="11" color="#FFFFFF" font_color="#000000" push_color="#707070" border_color="#707070" halign="left"/>
+		<text id="ITEM4" enable="1" visible="0" position="35,144" size="251,20" font_size="11" color="#FFFFFF" font_color="#000000" push_color="#707070" border_color="#707070" halign="left"/>
+		<text id="ITEM5" enable="1" visible="0" position="35,166" size="251,20" font_size="11" color="#FFFFFF" font_color="#000000" push_color="#707070" border_color="#707070" halign="left"/>
+
+		<button id="INFO1" visible="0" position="289,78" size="20,20" font_size="12" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#707070">I</button>
+		<button id="INFO2" visible="0" position="289,100" size="20,20" font_size="12" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#707070">I</button>
+		<button id="INFO3" visible="0" position="289,122" size="20,20" font_size="12" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#707070">I</button>
+		<button id="INFO4" visible="0" position="289,144" size="20,20" font_size="12" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#707070">I</button>
+		<button id="INFO5" visible="0" position="289,166" size="20,20" font_size="12" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#707070">I</button>
+
+		<button id="CANCEL" position="230,194" size="81,25" font_size="10" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#000000">
+			トップへ
+		</button>
+
+		<button id="PREV_PAGE" position="15,194" size="30,25" font_size="12" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#000000">
+			&lt;&lt;
+		</button>
+		<button id="NEXT_PAGE" position="119,194" size="30,25" font_size="12" color="#D0D0D0" font_color="#000000" push_color="#00FF00" border_color="#000000">
+			&gt;&gt;
+		</button>
+		<text id="PAGE_NUM" position="48,194" size="71,25" font_size="12" color="#FFFFFF" font_color="#000000" border_color="#FFFFFF" halign="center" valign="center">
+			00 / 00
+		</text>
+	</screen>
+
+	<screen id="FRAMEBUFFER" color="#FFFFFF" direction="normal">
+		<framebuffer id="FB" position="0,0" size="240,320" enable="1" rotate="1"/>
+
+		<button id="RETURN_BUTTON" position="215,295" size="25,25" font_size="8" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">
+			B
+		</button>
+
+		<text id="COMMAND_TEXT" position="0,0" size="0,0" visible="0"/>
+	</screen>
+
+
+
+
+
+	<screen id="KEYBOARD_PAD" color="#D0D0D0" direction="left">
+		<button id="KEY1" position="12,113" size="56,55" font_size="30" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">1</button>
+		<button id="KEY2" position="72,113" size="56,55" font_size="30" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">2</button>
+		<button id="KEY3" position="132,113" size="56,55" font_size="30" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">3</button>
+		<button id="KEY4" position="192,113" size="56,55" font_size="30" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">4</button>
+		<button id="KEY5" position="252,113" size="56,55" font_size="30" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">5</button>
+		<button id="KEY6" position="12,178" size="56,55" font_size="30" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">6</button>
+		<button id="KEY7" position="72,178" size="56,55" font_size="30" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">7</button>
+		<button id="KEY8" position="132,178" size="56,55" font_size="30" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">8</button>
+		<button id="KEY9" position="192,178" size="56,55" font_size="30" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">9</button>
+		<button id="KEY0" position="252,178" size="56,55" font_size="30" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">0</button>
+
+		<button id="KEYX" position="12,80" size="50,25" font_size="10" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">X</button>
+
+		<text id="TEXT" position="5,5" size="310,25" font_size="12" color="#FFFFFF" font_color="#000000" border_color="#000000">文字を入力：</text>
+		<text id="INSTRING" position="5,30" size="310,45" font_size="12" color="#FFFFFF" font_color="#000000" border_color="#000000"/>
+
+		<button id="DELETE" position="180,80" size="60,25" font_size="12" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">DEL</button>
+		<button id="ENTER" position="255,80" size="60,25" font_size="12" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">確定</button>
+
+	</screen>
+
+	<screen id="KEYBOARD_LOWER" color="#D0D0D0" direction="left">
+		<button id="KEY1" position="12,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">1</button>
+		<button id="KEY2" position="42,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">2</button>
+		<button id="KEY3" position="72,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">3</button>
+		<button id="KEY4" position="102,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">4</button>
+		<button id="KEY5" position="132,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">5</button>
+		<button id="KEY6" position="162,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">6</button>
+		<button id="KEY7" position="192,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">7</button>
+		<button id="KEY8" position="222,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">8</button>
+		<button id="KEY9" position="252,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">9</button>
+		<button id="KEY0" position="282,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">0</button>
+
+		<button id="KEYQ" position="12,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">q</button>
+		<button id="KEYW" position="42,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">w</button>
+		<button id="KEYE" position="72,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">e</button>
+		<button id="KEYR" position="102,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">r</button>
+		<button id="KEYT" position="132,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">t</button>
+		<button id="KEYY" position="162,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">y</button>
+		<button id="KEYU" position="192,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">u</button>
+		<button id="KEYI" position="222,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">i</button>
+		<button id="KEYO" position="252,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">o</button>
+		<button id="KEYP" position="282,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">p</button>
+
+		<button id="KEYA" position="25,175" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">a</button>
+		<button id="KEYS" position="55,175" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">s</button>
+		<button id="KEYD" position="85,175" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">d</button>
+		<button id="KEYF" position="115,175" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">f</button>
+		<button id="KEYG" position="145,175" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">g</button>
+		<button id="KEYH" position="175,175" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">h</button>
+		<button id="KEYJ" position="205,175" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">j</button>
+		<button id="KEYK" position="235,175" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">k</button>
+		<button id="KEYL" position="265,175" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">l</button>
+
+		<button id="KEYZ" position="47,206" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">z</button>
+		<button id="KEYX" position="77,206" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">x</button>
+		<button id="KEYC" position="107,206" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">c</button>
+		<button id="KEYV" position="137,206" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">v</button>
+		<button id="KEYB" position="167,206" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">b</button>
+		<button id="KEYN" position="197,206" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">n</button>
+		<button id="KEYM" position="227,206" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">m</button>
+		<button id="RETURN" position="257,206" size="55,28" font_size="12" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">改行</button>
+
+		<text id="TEXT" position="5,5" size="310,25" font_size="12" color="#FFFFFF" font_color="#000000" border_color="#000000">文字を入力：</text>
+		<text id="INSTRING" position="5,30" size="310,45" font_size="12" color="#FFFFFF" font_color="#000000" border_color="#000000"/>
+
+		<button id="LOWER" position="12,80" size="50,25" font_size="10" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">小文字</button>
+		<button id="UPPER" position="67,80" size="50,25" font_size="10" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">大文字</button>
+		<button id="SYMBOL" position="122,80" size="50,25" font_size="10" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">記号</button>
+
+		<button id="DELETE" position="190,80" size="60,25" font_size="12" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">DEL</button>
+		<button id="ENTER" position="255,80" size="60,25" font_size="12" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">確定</button>
+	</screen>
+
+	<screen id="KEYBOARD_UPPER" color="#D0D0D0" direction="left">
+		<button id="KEY1" position="12,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">1</button>
+		<button id="KEY2" position="42,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">2</button>
+		<button id="KEY3" position="72,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">3</button>
+		<button id="KEY4" position="102,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">4</button>
+		<button id="KEY5" position="132,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">5</button>
+		<button id="KEY6" position="162,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">6</button>
+		<button id="KEY7" position="192,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">7</button>
+		<button id="KEY8" position="222,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">8</button>
+		<button id="KEY9" position="252,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">9</button>
+		<button id="KEY0" position="282,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">0</button>
+
+		<button id="KEYQ" position="12,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">Q</button>
+		<button id="KEYW" position="42,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">W</button>
+		<button id="KEYE" position="72,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">E</button>
+		<button id="KEYR" position="102,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">R</button>
+		<button id="KEYT" position="132,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">T</button>
+		<button id="KEYY" position="162,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">Y</button>
+		<button id="KEYU" position="192,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">U</button>
+		<button id="KEYI" position="222,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">I</button>
+		<button id="KEYO" position="252,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">O</button>
+		<button id="KEYP" position="282,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">P</button>
+
+		<button id="KEYA" position="25,175" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">A</button>
+		<button id="KEYS" position="55,175" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">S</button>
+		<button id="KEYD" position="85,175" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">D</button>
+		<button id="KEYF" position="115,175" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">F</button>
+		<button id="KEYG" position="145,175" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">G</button>
+		<button id="KEYH" position="175,175" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">H</button>
+		<button id="KEYJ" position="205,175" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">J</button>
+		<button id="KEYK" position="235,175" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">K</button>
+		<button id="KEYL" position="265,175" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">L</button>
+
+		<button id="KEYZ" position="47,206" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">Z</button>
+		<button id="KEYX" position="77,206" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">X</button>
+		<button id="KEYC" position="107,206" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">C</button>
+		<button id="KEYV" position="137,206" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">V</button>
+		<button id="KEYB" position="167,206" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">B</button>
+		<button id="KEYN" position="197,206" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">N</button>
+		<button id="KEYM" position="227,206" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">M</button>
+		<button id="RETURN" position="257,206" size="55,28" font_size="12" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">改行</button>
+
+		<text id="TEXT" position="5,5" size="310,25" font_size="12" color="#FFFFFF" font_color="#000000" border_color="#000000">文字を入力：</text>
+		<text id="INSTRING" position="5,30" size="310,45" font_size="12" color="#FFFFFF" font_color="#000000" border_color="#000000"/>
+
+		<button id="LOWER" position="12,80" size="50,25" font_size="10" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">小文字</button>
+		<button id="UPPER" position="67,80" size="50,25" font_size="10" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">大文字</button>
+		<button id="SYMBOL" position="122,80" size="50,25" font_size="10" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">記号</button>
+
+		<button id="DELETE" position="190,80" size="60,25" font_size="12" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">DEL</button>
+		<button id="ENTER" position="255,80" size="60,25" font_size="12" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">確定</button>
+	</screen>
+
+	<screen id="KEYBOARD_SYMBOL" color="#D0D0D0" direction="left">
+		<button id="KEYS1" position="12,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">!</button>
+		<button id="KEYS2" position="42,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">&quot;</button>
+		<button id="KEYS3" position="72,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">#</button>
+		<button id="KEYS4" position="102,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">$</button>
+		<button id="KEYS5" position="132,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">%</button>
+		<button id="KEYS6" position="162,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">&amp;</button>
+		<button id="KEYS7" position="192,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">&apos;</button>
+		<button id="KEYS8" position="222,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">(</button>
+		<button id="KEYS9" position="252,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">)</button>
+		<button id="KEYS10" position="282,113" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">-</button>
+
+		<button id="KEYS11" position="12,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">^</button>
+		<button id="KEYS12" position="42,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">\</button>
+		<button id="KEYS13" position="72,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">@</button>
+		<button id="KEYS14" position="102,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">[</button>
+		<button id="KEYS15" position="132,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">;</button>
+		<button id="KEYS16" position="162,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">:</button>
+		<button id="KEYS17" position="192,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">]</button>
+		<button id="KEYS18" position="222,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">,</button>
+		<button id="KEYS19" position="252,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">.</button>
+		<button id="KEYS20" position="282,144" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">/</button>
+
+		<button id="KEYS21" position="25,175" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">=</button>
+		<button id="KEYS22" position="55,175" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">~</button>
+		<button id="KEYS23" position="85,175" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">|</button>
+		<button id="KEYS24" position="115,175" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">`</button>
+		<button id="KEYS25" position="145,175" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">{</button>
+		<button id="KEYS26" position="175,175" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">+</button>
+		<button id="KEYS27" position="205,175" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">*</button>
+		<button id="KEYS28" position="235,175" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">}</button>
+		<button id="KEYS29" position="265,175" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">&lt;</button>
+
+		<button id="KEYS30" position="47,206" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">&gt;</button>
+		<button id="KEYS31" position="77,206" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">?</button>
+		<button id="KEYS32" position="107,206" size="25,28" font_size="14" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">_</button>
+		<button id="SPACE" position="137,206" size="55,28" font_size="12" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">SPACE</button>
+		<button id="TAB" position="197,206" size="55,28" font_size="12" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">TAB</button>
+		<button id="RETURN" position="257,206" size="55,28" font_size="12" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">改行</button>
+
+		<text id="TEXT" position="5,5" size="310,25" font_size="12" color="#FFFFFF" font_color="#000000" border_color="#000000">文字を入力：</text>
+		<text id="INSTRING" position="5,30" size="310,45" font_size="12" color="#FFFFFF" font_color="#000000" border_color="#000000"/>
+
+
+		<button id="LOWER" position="12,80" size="50,25" font_size="10" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">小文字</button>
+		<button id="UPPER" position="67,80" size="50,25" font_size="10" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">大文字</button>
+		<button id="SYMBOL" position="122,80" size="50,25" font_size="10" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">記号</button>
+
+		<button id="DELETE" position="190,80" size="60,25" font_size="12" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">DEL</button>
+		<button id="ENTER" position="255,80" size="60,25" font_size="12" color="#FFFFFF" font_color="#000000" push_color="#00FF00" border_color="#000000">確定</button>
+	</screen>
+</display>

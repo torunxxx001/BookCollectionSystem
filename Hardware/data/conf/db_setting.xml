@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<db>
+	<host>localhost</host>
+	<user>book_man</user>
+	<password>fdsfjeo</password>
+	<dbname>book_sys</dbname>
+</db>

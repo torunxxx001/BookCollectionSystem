@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<menu_items>
+		<menu>
+			<name>電化製品・カメラ</name>
+		</menu>
+		<menu>
+			<name>コンピュータ</name>
+		</menu>
+		<menu>
+			<name>音楽・本・映画</name>
+		</menu>
+		<menu>
+			<name>おもちゃ・ゲーム・趣味</name>
+		</menu>
+		<menu>
+			<name>ファッション</name>
+		</menu>
+		<menu>
+			<name>時計・アクセサリー</name>
+		</menu>
+		<menu>
+			<name>食品・飲料</name>
+		</menu>
+		<menu>
+			<name>その他</name>
+		</menu>
+	</menu_items>
+	<status>ok</status>
+</data>

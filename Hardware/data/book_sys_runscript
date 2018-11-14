@@ -1,0 +1,58 @@
+#!/bin/bash
+#
+### BEGIN INIT INFO
+# Provides:          book_sys
+# Required-Start:    $ALL
+# Required-Stop:     
+# Should-Start:      
+# Should-Stop:       
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: book_sys run script
+# Description:       book_sys run script
+### END INIT INFO
+#
+
+DAEMON=/home/pi/book_sys/book_sys
+PID=/var/run/book_sys.pid
+
+. /lib/lsb/init-functions
+
+case "$1" in
+  start)
+	if [ ! -e $PID ]; then
+		echo "start - book_sys"
+
+        	exec $DAEMON &
+
+		STATUS=0
+		for i in 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15; do
+			sleep 1
+			if [ -e $PID ]; then STATUS=1; break; fi
+		done
+
+		if [ "$STATUS" -eq 1 ]; then
+			echo "book_sys started"
+		else
+			echo "book_sys start failed"
+		fi
+	else
+		echo "book_sys already started"
+	fi
+
+        ;;
+  stop)
+	if [ -e $PID ]; then
+		echo "stop - book_sys"
+		killproc -p $PID $DAEMON
+	else
+		echo "book_sys hasn't started"
+	fi
+        ;;
+  restart)
+	$0 stop
+	$0 start
+	;;
+esac
+
+
